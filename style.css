@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    min-width: 375px;
+    height: 80vh;
+}
+main {
+    border: 1px solid purple;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+    width: 50%;
+}
+
+#sedans {
+    border: 1px solid red;
+    width: 250px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+}
+.imagem {
+    border: 1px solid red;
+    margin-right: 100px;
+}
