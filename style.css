@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'big_shoulers_display.otf';
+    src: url('font/big_shoulers_display.otf'),
+         url('font/big_shoulers_display.ttf');
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,34 +21,79 @@ main {
     grid-template-areas: 
         'primeira segundo terceiro'
     ;
-    max-width: 1200px;
+    
     margin: 0 auto;
     padding: 10px;
+   
+    border: 2px solid red;
     
 }
 .container > main {
-    width: 100%;
+    width: 50%;
     height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-
+}
+.aprendaMais {
+    margin-top: 100px;
+    border: 1px solid red;
+    text-align: center;
+}
+div > a {
+    border: 1px solid hsl(0, 0%, 95%);
+    text-decoration: none;
+    color:  hsl(0, 0%, 95%);
+    border-radius: 20px;
+    
+    width: auto;
+    
 }
 
 main > div {
     border: 1px solid red;
-    height: 30vh;
-    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    padding: 40px;
+
+    
+}
+.item1 {grid-area: primeira;}
+.item2 {grid-area: segundo;}
+.item3 {grid-area: terceiro;}
+
+img {
+    width: 64px;
 }
 .item1 {
-    grid-area: primeira;
+    background-color: hsl(31, 77%, 52%);
+    
+    
+  
 }
 .item2 {
-    grid-area: segundo;
+    background-color: hsl(31, 77%, 52%);
+    
 }
 .item3 {
-    grid-area: terceiro;
+    background-color: hsl(31, 77%, 52%);
+    
 }
+h1 {
+    font-family: 'big_shoulers_display';
+    font-weight: 700;
+    font-size: 15px
+    color: hsl(0, 0%, 95%);
+}
+p {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
 
+}
 @media (max-width: 739px){
 
     main {
@@ -58,10 +112,8 @@ main > div {
     margin-top: 50px;
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-flow: column wrap;
-
-}
     
+    flex-direction: column;
 
+}   
 }
