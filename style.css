@@ -24,35 +24,21 @@ main {
     
     margin: 0 auto;
     padding: 10px;
-   
-    border: 2px solid red;
     
 }
 .container > main {
-    width: 50%;
+    width: 60%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.aprendaMais {
-    margin-top: 100px;
-    border: 1px solid red;
-    text-align: center;
-}
-div > a {
-    border: 1px solid hsl(0, 0%, 95%);
-    text-decoration: none;
-    color:  hsl(0, 0%, 95%);
-    border-radius: 20px;
-    
-    width: auto;
-    
-}
+
+
 
 main > div {
-    border: 1px solid red;
-    height: auto;
+    
+    height: 52%;
     display: flex;
     flex-flow: column wrap;
     gap: 20px;
@@ -69,23 +55,27 @@ img {
 }
 .item1 {
     background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     
-    
-  
+      
 }
 .item2 {
-    background-color: hsl(31, 77%, 52%);
+    background-color: hsl(184, 100%, 22%);
     
 }
 .item3 {
-    background-color: hsl(31, 77%, 52%);
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     
 }
 h1 {
     font-family: 'big_shoulers_display';
     font-weight: 700;
-    font-size: 15px
+    font-size: 15px;
     color: hsl(0, 0%, 95%);
+    
 }
 p {
     font-family: "Lexend Deca", sans-serif;
@@ -94,8 +84,54 @@ p {
     color: hsla(0, 0%, 100%, 0.75);
 
 }
-@media (max-width: 739px){
+div > a {
+    padding: 12px;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 20px;
+    width: auto;    
+}
+.aprendaMais {
+    margin-top: 50px;
+}
+#sedans-buttom {
+    color:  hsl(31, 77%, 52%);
+}
 
+#suvs-buttom {
+    color: hsl(184, 100%, 22%);
+}
+
+#luxury-buttom {
+    color: hsl(179, 100%, 13%);
+}
+#sedans-buttom:hover {
+    background-color: hsl(31, 77%, 52%);
+    border: 1px solid white;
+    color: white;
+}
+#suvs-buttom:hover {
+    background-color: hsl(184, 100%, 22%);
+    border: 1px solid white;
+    color: white;
+}
+#luxury-buttom:hover {
+    background-color: hsl(179, 100%, 13%);
+    border: 1px solid white;
+    color: white;
+}
+@media (max-width: 739px){
+    
+    .container {
+       
+        margin-bottom: 10px;
+    }
+    .container > main {
+        width: 70%;
+        flex-flow: row wrap;
+        margin-top: 50px;
+    
+    }   
     main {
     
     display: grid;
@@ -105,15 +141,23 @@ p {
         'primeira'
         'segundo'
         'terceiro';
-    
-   
     }
-    .container > main {
-    margin-top: 50px;
-    width: 100%;
-    height: 100vh;
+    main > div {
+        height: auto;
+    }
+    .aprendaMais {
+    margin-top: 20px;
     
-    flex-direction: column;
+    }
+    .item1 {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;    
+    }
 
-}   
+    .item3 {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    }
+    
 }
