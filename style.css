@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
 @font-face {
-    font-family: 'big_shoulers_display.otf';
-    src: url('font/big_shoulers_display.otf'),
-         url('font/big_shoulers_display.ttf');
+    font-family: 'Big Shoulders Display';
+    src: url('font/big_shoulers_display.otf') format('opentype'),
+         url('font/big_shoulers_display.ttf') format('truetype');
 }
 
 
@@ -71,9 +71,9 @@ img {
     
 }
 h1 {
-    font-family: 'big_shoulers_display';
+    font-family: 'Big Shoulders Display', sans-serif;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 2em;
     color: hsl(0, 0%, 95%);
     
 }
